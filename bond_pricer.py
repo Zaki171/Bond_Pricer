@@ -27,15 +27,8 @@ def duration(par_val, ytm, coup, coup_freq, T):
     print("Macauly Duration: ", mac_dur)
     mod_dur = mac_dur/(1+ytm)
     print("Modified Duration: ", mod_dur)
+    return mod_dur
 
         
 
 
-print(pricer(1000, 0.15, 0.1, 1, 20))
-print(pricer(1000, 0.15, 0.1, 2, 5))
-
-print(pricer(1000, 0.065, 0.05, 1, 20)-pricer(1000, 0.065, 0.05, 1, 17))
-
-print(pricer(1000, 0.12, 0.06, 2, 2))
-
-print(duration(1000, 0.05,  0.05, 1, 4))
